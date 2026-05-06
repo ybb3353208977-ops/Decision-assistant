@@ -29,4 +29,4 @@
 下载或克隆本仓库后，直接用浏览器打开 `index.html` 即可运行。
 
 ```bash
-git clone https://github.com/你的用户名/decision-assistant.git
+git clone https://github.com/ybb3353208977-ops/Decision-assistant.git
