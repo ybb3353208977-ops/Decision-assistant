@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>辅助决策系统</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>辅助决策系统</h1>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" id="btn-new">新建决策</button>
+        <button type="button" class="btn" id="btn-export">导出 JSON</button>
+        <label class="btn" style="cursor: pointer; margin: 0">
+          导入
+          <input type="file" id="file-import" accept="application/json,.json" hidden />
+        </label>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>我的决策</h2>
+        <ul class="project-list" id="project-list"></ul>
+      </aside>
+      <main id="main-content"></main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
